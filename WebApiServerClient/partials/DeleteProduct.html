@@ -1,0 +1,13 @@
+﻿
+<div class="jumbotron masthead">
+  <div ng-controller="getProductController" class="container">
+    <br /><br /><h1>Delete Product</h1>
+    <label for="fullname">Product Id: {{product.Id}}</label> 
+    <label for="fullname">Name: {{product.Name}}</label>
+    
+    <div>
+        <button type="submit" ng-click="Delete()">Delete</button>
+        <a href="#/viewProducts">Back</a>        
+    </div>
+  </div>
+</div>   

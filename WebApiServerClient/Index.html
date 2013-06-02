@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html ng-app="productApp">
+<head>
+    <title>My Sample App - ProductManagement</title>
+
+    <!-- Scrips -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>   
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link href="Content/Site.css" rel="stylesheet" />    
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .horizontalLine {
+            border-bottom: solid 1px #000;
+            height: 10px;
+            line-height: 20px;
+            text-align: left;
+        }
+        .content {
+            background-color: #FFF;
+            display: inline;
+            padding: 0 10px; /* <--- */
+        }
+
+        .verticalLine {
+            border-left: thick solid #ff0000;
+        }
+        .Line {
+            border-bottom: thick solid 1px #000;
+            border-left: thick solid #000;
+        }
+
+        table{
+            border-collapse:collapse;
+            border:1px solid #000;
+        }
+
+        table td{
+            border:1px solid #000;
+        }
+
+        A:link {text-decoration: none; color: blue;}
+        A:visited {text-decoration: none}
+        A:active {text-decoration: none}
+        A:hover {text-decoration: underline; color: red;}
+    </style>
+    
+</head>
+<body>    
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <li><a href="#/viewProducts">Show Product List</a></li>
+              </li>
+              <li class="">
+                <li><a href="#/viewAddProduct">Add Product</a></li>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div ng-view></div>
+</body>
+</html>

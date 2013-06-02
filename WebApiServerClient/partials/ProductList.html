@@ -1,0 +1,27 @@
+﻿
+
+<div class="jumbotron masthead">
+  <div ng-controller="getProductsController" class="container">
+        <br /><br /><h1>Product List</h1>
+        <!--<ul>
+            <li ng-repeat="liproduct in products | filter:query">
+                {{liproduct.Id}}
+                {{liproduct.Name}}
+                <a href="#/viewEditProduct/{{liproduct.Id}}">Edit</a>                
+            </li>              
+        </ul> --> 
+
+        <table border="1">
+            <tr>
+                <td class="ui-widget-header">Product Id</td>
+                <td class="ui-widget-header">Product Name</td>
+                <td class="ui-widget-header">Action</td>
+            </tr>
+            <tr ng-repeat="liproduct in products | filter:query">
+                <td>{{liproduct.Id}}</td>
+                <td>{{liproduct.Name}}</td>
+                <td><a href="#/viewEditProduct/{{liproduct.Id}}">Edit</a> | <a href="#/viewDeleteProduct/{{liproduct.Id}}">Delete</a></td>
+            </tr>
+        </table>
+    </div>
+ </div>

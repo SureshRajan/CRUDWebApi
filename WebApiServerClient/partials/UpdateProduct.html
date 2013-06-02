@@ -1,0 +1,15 @@
+﻿
+<div class="jumbotron masthead">
+  <div ng-controller="getProductController" class="container">
+    <br /><br /><h1>Update Product</h1>
+    <label for="fullname">Product Id: </label> 
+    <input type="text" id="productId" ng-model="product.Id" ><br/>
+    <label for="fullname">Name: </label>
+    <input type="text" id="productName" ng-model="product.Name" ><br/>
+
+    <div>
+        <button type="submit" ng-click="Save()">Update</button>
+        <a href="#/viewProducts">Back</a>        
+    </div> 
+  </div>
+</div>   
